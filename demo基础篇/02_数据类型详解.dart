@@ -1,5 +1,5 @@
 /*
-  Dart数据类型：
+  Dart数据类型：(可以通过is 关键字判断数据类型)
   1. 数字类型 int、double
   2. 字符串类型 String
   3. 布尔类型 bool
@@ -81,4 +81,22 @@ void main() {
   print(l4.length);
   // l4[5] = 4; 固定了长度后不可以进行超长度去定义元素， 并且不可以去修改数组的长度
   // print(l4);
+
+  // 第一种定义Map的方式
+  var person = {"name": "zhangsan", "age": 24};
+
+  print(person);
+  print(person['name']);
+
+  // 第二种定义Map的方式
+  var person2 = new Map();
+  person2['name'] = 'lisi';
+  person2['age'] = 25;
+
+  print(person2);
+  print(person2['name']);
+
+  const strs = "person";
+
+  print(strs is String);
 }
