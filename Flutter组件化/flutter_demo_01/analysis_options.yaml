@@ -1,0 +1,6 @@
+### 语法分析文件
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+
